@@ -1,47 +1,143 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex"><title>Privacy policy</title>
+<meta name="robots" content="noindex"><title>Privacy policy · quiz.2026.alias.0x73.dev</title>
 <style>
-:root{color-scheme:light dark}
-body{font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:46rem;margin:0 auto;padding:2.5rem 1.25rem 4rem}
-h1{font-size:1.8rem;margin:0 0 .25rem}h2{font-size:1.15rem;margin:2rem 0 .4rem}
-.meta{opacity:.65;font-size:.9rem;margin:0 0 1.5rem}ul{padding-left:1.25rem}li{margin:.25rem 0}
-a{color:inherit}
+:root{color-scheme:light dark;--bg:#fff;--fg:#14161a;--mut:#5b6270;--line:#e4e7ec;--card:#f6f7f9;--acc:#f6821f;--acc2:#ff5a36}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1013;--fg:#eceef2;--mut:#9aa1ae;--line:#242830;--card:#161a20}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--acc2);text-underline-offset:3px}
+.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top div{max-width:1100px;margin:0 auto;padding:.85rem 1.25rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-size:.9rem}
+.brand{font-weight:700;letter-spacing:.02em}.brand i{display:inline-block;width:.7rem;height:.7rem;border-radius:50%;background:linear-gradient(135deg,var(--acc),var(--acc2));margin-right:.5rem}
+.wrap{max-width:1100px;margin:0 auto;padding:2.5rem 1.25rem 5rem;display:grid;grid-template-columns:240px minmax(0,1fr);gap:3rem}
+nav.toc{position:sticky;top:5.2rem;align-self:start;font-size:.88rem;max-height:calc(100vh - 7rem);overflow:auto}
+nav.toc b{display:block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin-bottom:.6rem}
+nav.toc a{display:block;color:var(--mut);text-decoration:none;padding:.32rem .75rem;border-left:2px solid var(--line)}
+nav.toc a:hover{color:var(--fg);border-left-color:var(--acc)}
+.help{border:1px solid var(--line);background:var(--card);border-radius:14px;padding:1rem 1.25rem;margin-bottom:2rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center}
+.help b{display:block}.help span{color:var(--mut);font-size:.92rem}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#fff;text-decoration:none;font-weight:600;padding:.55rem 1.1rem;border-radius:999px;font-size:.92rem}
+h1{font-size:clamp(2rem,4.5vw,2.9rem);line-height:1.1;margin:.2rem 0 .6rem;letter-spacing:-.02em}
+.meta{color:var(--mut);font-size:.92rem;margin:0 0 1.75rem}
+.promise{border-radius:16px;padding:1.4rem 1.5rem;margin:0 0 2.5rem;background:linear-gradient(135deg,color-mix(in srgb,var(--acc) 16%,var(--card)),var(--card));border:1px solid var(--line)}
+.promise h2{margin:0 0 .6rem;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--acc2)}
+.promise ul{margin:0;padding-left:1.1rem}.promise li{margin:.3rem 0}
+h2.s{font-size:1.45rem;margin:3rem 0 .6rem;letter-spacing:-.01em;display:flex;gap:.7rem;align-items:baseline}
+h2.s span{font-size:.85rem;color:var(--acc2);font-variant-numeric:tabular-nums;font-weight:700}
+h3{font-size:1.02rem;margin:1.5rem 0 .3rem}p{margin:.6rem 0}li{margin:.3rem 0}
+ul{padding-left:1.25rem}
+table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.93rem;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:block;overflow-x:auto}
+th,td{padding:.7rem .9rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:var(--card);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+tr:last-child td{border-bottom:0}
+.note{border-left:3px solid var(--acc);background:var(--card);padding:.8rem 1rem;border-radius:0 10px 10px 0;margin:1.2rem 0;font-size:.95rem}
+footer{margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--line);color:var(--mut);font-size:.88rem}
+@media (max-width:860px){.top div a{display:none}.wrap{grid-template-columns:1fr;gap:1.5rem}nav.toc{position:static;max-height:none;border:1px solid var(--line);border-radius:12px;padding:1rem}}
+@media print{.top,nav.toc,.help{display:none}.wrap{display:block}}
 </style></head><body>
+<header class="top"><div><span class="brand"><i></i>quiz.2026.alias.0x73.dev</span><a href="mailto:legal.2026.alias@0x73.dev">legal.2026.alias@0x73.dev</a></div></header>
+<div class="wrap">
+<nav class="toc" aria-label="Contents"><b>Contents</b>
+<a href="#promise">Summary</a><a href="#s1">1. Who we are</a><a href="#s2">2. Information we collect</a><a href="#s3">3. How we use it</a><a href="#s4">4. Legal bases</a><a href="#s5">5. Who we share it with</a><a href="#s6">6. Cookies and storage</a><a href="#s7">7. Session recordings</a><a href="#s8">8. International transfers</a><a href="#s9">9. Retention</a><a href="#s10">10. Security</a><a href="#s11">11. Your rights</a><a href="#s12">12. Blocking and opting out</a><a href="#s13">13. Children</a><a href="#s14">14. Changes</a><a href="#s15">15. Contact</a></nav>
+<main>
+<div class="help"><div><b>Questions about your data?</b><span>Email the site owner and we will reply as soon as we can.</span></div><a class="btn" href="mailto:legal.2026.alias@0x73.dev">Get in touch</a></div>
 <h1>Privacy policy</h1>
-<p class="meta">quiz.2026.alias.0x73.dev &middot; Last updated 18 November 2026</p>
+<p class="meta">Effective 18 November 2026</p>
 
-<p>This is a small, password-protected study site. This page explains what information the site collects about visitors, why, and what you can do about it.</p>
+<section class="promise" id="promise"><h2>The short version</h2><ul>
+<li>This is a small, password-protected study site run by one person.</li>
+<li>When you open it, we record your <b>IP address, approximate location, browser, device type</b> and <b>how you use the page</b>, even before you enter the password.</li>
+<li>Anything you <b>type</b>, including password attempts, is <b>masked</b> and never recorded. Your password never leaves your browser.</li>
+<li>We use this to see whether the site is used and to spot unauthorised access. We do not sell it or use it for advertising.</li>
+<li>You can ask us what we hold and have it deleted, by emailing <a href="mailto:legal.2026.alias@0x73.dev">legal.2026.alias@0x73.dev</a>.</li></ul></section>
 
-<h2>Who is responsible</h2>
-<p>The site is run by its owner, who decides what is collected and why. Contact: <a href="mailto:legal.2026.alias@0x73.dev">legal.2026.alias@0x73.dev</a>.</p>
+<h2 class="s" id="s1"><span>1</span>Who we are</h2>
+<p>This site is operated by its owner, an individual in Ireland. The owner decides what personal data is collected and why, which makes the owner the &ldquo;controller&rdquo; of that data under the EU General Data Protection Regulation (GDPR). You can reach the owner at <a href="mailto:legal.2026.alias@0x73.dev">legal.2026.alias@0x73.dev</a>.</p>
+<p>The site contains study material that is encrypted in your browser. It is shared with a small group of people. It is not a commercial service and has no accounts or sign-up.</p>
 
-<h2>What is collected when you visit</h2>
+<h2 class="s" id="s2"><span>2</span>Information we collect</h2>
+<p>We collect information automatically when your browser loads the page. We do not ask you for any personal details, and there is no form on the site other than the password box.</p>
+<table><thead><tr><th>Category</th><th>Examples</th><th>How it is collected</th></tr></thead><tbody>
+<tr><td><b>Network data</b></td><td>IP address; approximate country, region and city worked out from the IP address</td><td>Sent by your browser with each request; read by our analytics provider</td></tr>
+<tr><td><b>Device data</b></td><td>Browser and version, operating system, device type, screen size, language</td><td>Reported by your browser</td></tr>
+<tr><td><b>Usage data</b></td><td>Pages opened, time and length of the visit, the link you arrived from, clicks and scrolling, which filters you use</td><td>Analytics script on the page</td></tr>
+<tr><td><b>Session recordings</b></td><td>A replay of what was shown on screen and how you interacted with it, with typed text masked (see section 7)</td><td>Analytics script on the page</td></tr>
+<tr><td><b>Hosting logs</b></td><td>Request details such as IP address and time</td><td>The hosting provider, under its own policy</td></tr>
+<tr><td><b>Messages you send us</b></td><td>Your email address and what you write</td><td>Only if you email the contact address</td></tr></tbody></table>
+<p>We do not intentionally collect sensitive categories of data, such as health, political or religious information, and we do not ask for names, accounts or payment details.</p>
+
+<h2 class="s" id="s3"><span>3</span>How we use it</h2>
 <ul>
-<li>Your <b>IP address</b>, and the approximate location (country and city) worked out from it.</li>
-<li>Your <b>browser, operating system and device type</b> (for example phone or computer).</li>
-<li>The <b>pages you open</b>, the time and length of your visit, and the <b>link you came from</b>.</li>
-<li>A <b>recording of how you use the page</b>: clicks, scrolling and what is shown on screen. Anything typed into a text field, including password attempts, is masked and is not recorded.</li>
-</ul>
-<p>This happens as soon as the page loads, before you enter the password. The site does not use cookies or store data in your browser for analytics.</p>
+<li>To see whether the site is being used, and roughly where and on what devices.</li>
+<li>To notice unusual activity, such as repeated visits from an unexpected place, and to protect the password-protected content.</li>
+<li>To understand which parts of the page people use, so the page can be improved.</li>
+<li>To answer you if you contact us, and to handle a privacy request.</li></ul>
+<p>We do not use this information for advertising, we do not build marketing profiles, and we do not make decisions about you by automated means.</p>
 
-<h2>Why it is collected</h2>
-<p>To see whether the site is being used, and to spot unusual or unauthorised access to a password-protected page. The legal basis is the owner's legitimate interest in keeping the site secure. The site is not used for advertising and the data is not sold.</p>
-
-<h2>Who handles the data</h2>
+<h2 class="s" id="s4"><span>4</span>Legal bases</h2>
+<p>Under the GDPR we need a legal basis to process personal data. We rely on:</p>
 <ul>
-<li><b>PostHog</b> (EU cloud) stores the visit records and recordings.</li>
-<li><b>Cloudflare Web Analytics</b> counts visits in aggregate, without cookies.</li>
-<li><b>GitHub Pages</b> hosts the site and may log requests itself under its own privacy statement.</li>
-</ul>
-<p>These providers may process data outside the European Economic Area under their own safeguards. See their privacy notices for details.</p>
+<li><b>Legitimate interests</b> (Article 6(1)(f)) for analytics and security: the owner has a genuine interest in knowing how the site is used and in protecting access to it. We have kept the data collected to what is needed for that, and masked typed text so that recordings capture as little as possible. You can object at any time (section 11).</li>
+<li><b>Legal obligation or your request</b> for handling emails and privacy requests that you send us.</li></ul>
 
-<h2>How long it is kept</h2>
-<p>Records and recordings are kept only for as long as needed to review activity on the site. The owner reviews them and deletes older data. You can ask for your data to be deleted sooner.</p>
+<h2 class="s" id="s5"><span>5</span>Who we share it with</h2>
+<p>We share data only with the services that make the site work. They process it on our behalf and under their own terms.</p>
+<table><thead><tr><th>Provider</th><th>What it does</th><th>What it receives</th></tr></thead><tbody>
+<tr><td><b>PostHog</b> (EU cloud)</td><td>Visit records, usage data and session recordings</td><td>IP address, device data, usage data, masked recordings</td></tr>
+<tr><td><b>Cloudflare Web Analytics</b></td><td>Aggregate visit counts and performance, without cookies</td><td>Standard request data from your browser</td></tr>
+<tr><td><b>GitHub Pages</b></td><td>Hosts and serves the site</td><td>Request data, including your IP address, under GitHub&rsquo;s privacy statement</td></tr></tbody></table>
+<p>We do not sell your data and do not share it with advertisers. We may disclose information if the law requires it.</p>
 
-<h2>Your rights</h2>
-<p>You can ask what is held about you, ask for it to be corrected or deleted, or object to the collection. Email <a href="mailto:legal.2026.alias@0x73.dev">legal.2026.alias@0x73.dev</a> and include the approximate time of your visit and your IP address, so the records can be found. You can also complain to the Data Protection Commission in Ireland (<a href="https://www.dataprotection.ie">dataprotection.ie</a>).</p>
+<h2 class="s" id="s6"><span>6</span>Cookies and browser storage</h2>
+<p>The site does not set analytics cookies and does not store analytics identifiers in your browser. Analytics identifiers are kept in the page&rsquo;s memory and are discarded when you close or reload the tab, so a return visit looks like a new one. Your browser or your network may still keep ordinary technical data such as cache files.</p>
 
-<h2>Changes</h2>
-<p>If this changes, the date at the top is updated.</p>
-</body></html>
+<h2 class="s" id="s7"><span>7</span>Session recordings</h2>
+<p>The analytics tool can record a visit as a replay, so the owner can see how the page is used. To protect your privacy:</p>
+<ul>
+<li><b>All text typed into input fields is masked</b>, including password attempts. It is replaced with placeholder characters before it leaves your browser.</li>
+<li>The password you enter is used inside your browser to unlock the page and is never sent to us or to any provider.</li>
+<li>What is shown on the page after it is unlocked, such as the study questions, can appear in a recording.</li>
+<li>Recordings are viewed only by the owner and are not shared.</li></ul>
+<div class="note">If you do not want to be recorded, you can block the analytics scripts (section 12) or simply not visit the page.</div>
+
+<h2 class="s" id="s8"><span>8</span>International transfers</h2>
+<p>Visit records and recordings are stored on PostHog&rsquo;s EU cloud. Cloudflare and GitHub operate globally, so some request data may be processed outside the European Economic Area, including in the United States. These providers rely on recognised safeguards for such transfers, such as the EU&ndash;US Data Privacy Framework or standard contractual clauses. See their own privacy notices for the details.</p>
+
+<h2 class="s" id="s9"><span>9</span>How long we keep it</h2>
+<p>Visit records and session recordings are kept for up to <b>12 months</b> and then deleted. Emails you send us are kept only as long as needed to deal with your request. We will delete your data sooner if you ask us to and we can identify it (section 11).</p>
+
+<h2 class="s" id="s10"><span>10</span>Security</h2>
+<ul>
+<li>The study content is encrypted with AES-256 and decrypted only in your browser once the correct password is entered.</li>
+<li>The site is served over HTTPS.</li>
+<li>Access to the analytics dashboards is limited to the owner and protected by the providers&rsquo; sign-in.</li></ul>
+<p>No online service is perfectly secure. If a breach affecting your data occurred, we would act as the law requires.</p>
+
+<h2 class="s" id="s11"><span>11</span>Your rights</h2>
+<p>If you are in the EU, the UK or a similar jurisdiction, you can ask us to:</p>
+<ul>
+<li><b>Access</b> the personal data we hold about you and get a copy.</li>
+<li><b>Correct</b> data that is wrong.</li>
+<li><b>Delete</b> your data.</li>
+<li><b>Restrict</b> or <b>object to</b> our use of your data, in particular where we rely on legitimate interests.</li>
+<li>Receive data you provided in a portable form, where that applies.</li></ul>
+<p>To make a request, email <a href="mailto:legal.2026.alias@0x73.dev">legal.2026.alias@0x73.dev</a>. Because we do not know who you are, please include your <b>IP address</b> and the <b>approximate date and time</b> of your visit so we can find the records. We may ask for a little more information to confirm the records are yours. We aim to reply within one month.</p>
+<p>You also have the right to complain to the supervisory authority. In Ireland this is the <a href="https://www.dataprotection.ie">Data Protection Commission</a>.</p>
+
+<h2 class="s" id="s12"><span>12</span>Blocking and opting out</h2>
+<ul>
+<li>Most ad blockers and tracker-blocking browsers stop the analytics scripts from loading. The site works the same way without them.</li>
+<li>Browsers with a &ldquo;Do Not Track&rdquo; or &ldquo;Global Privacy Control&rdquo; setting may also reduce tracking, but we cannot promise that every setting is honoured.</li>
+<li>You can email us to ask that your data be removed.</li></ul>
+
+<h2 class="s" id="s13"><span>13</span>Children</h2>
+<p>The site is intended for students preparing for a school science quiz, so some visitors may be under 18. We do not knowingly ask for personal information from anyone, and we do not profile or target young people. If you are a parent or guardian and want data about a child deleted, email us.</p>
+
+<h2 class="s" id="s14"><span>14</span>Changes to this policy</h2>
+<p>If we change what we collect or how we use it, we will update this page and the date at the top. If the change is significant, we will make that clear on the page&rsquo;s lock screen.</p>
+
+<h2 class="s" id="s15"><span>15</span>Contact</h2>
+<p>Questions, requests or complaints about this policy: <a href="mailto:legal.2026.alias@0x73.dev">legal.2026.alias@0x73.dev</a>.</p>
+<footer>quiz.2026.alias.0x73.dev &middot; Privacy policy &middot; Effective 18 November 2026</footer>
+</main></div></body></html>
