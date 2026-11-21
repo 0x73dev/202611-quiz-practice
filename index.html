@@ -279,29 +279,7 @@ main button.ctl.lockbtn:hover{background:rgba(255,120,60,.08);border-color:#6a3f
 main section ol{padding-left:2.7em!important}
 main section ol>li::marker{font-variant-numeric:tabular-nums}
 </style></head>
-<body class="locked"><style>
-:root{--bh:46px}
-#delBanner{position:fixed;top:0;left:0;right:0;height:var(--bh);z-index:200;display:flex;align-items:center;justify-content:center;gap:10px;
- padding:0 12px;background:linear-gradient(90deg,#7a1020,#b3182f,#7a1020);color:#fff;font:600 .88rem/1.2 "Inter",-apple-system,"Segoe UI",Roboto,sans-serif;
- box-shadow:0 6px 24px -8px rgba(179,24,47,.7);text-align:center}
-#delBanner .ttl{white-space:nowrap}
-#delBanner .cd{font-family:"JetBrains Mono",ui-monospace,monospace;background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:3px 8px;white-space:nowrap;letter-spacing:.04em}
-body{padding-top:var(--bh)}
-#gate.hero{top:calc(var(--bh) + 10px)!important}
-.controls{top:var(--bh)!important}
-.fc{top:var(--bh)!important;height:calc(100vh - var(--bh))!important;height:calc(100dvh - var(--bh))!important}
-@media (max-width:520px){:root{--bh:58px}#delBanner{flex-direction:column;gap:3px;font-size:.8rem}}
-</style>
-<div id="delBanner" role="status" aria-live="polite"><span class="ttl">&#9888; This site will be deleted on Sunday at 11:30&nbsp;AM</span><span class="cd" id="delCd">--</span></div>
-<script>
-(function(){const T=Date.parse('2026-11-22T11:30:00Z'),el=document.getElementById('delCd'),b=document.getElementById('delBanner');
-const p=n=>String(n).padStart(2,'0');
-function tick(){let ms=T-Date.now();
- if(ms<=0){b.querySelector('.ttl').textContent='⚠ This site is being deleted';el.textContent='00:00:00';return;}
- const s=Math.floor(ms/1000),d=Math.floor(s/86400),h=Math.floor(s%86400/3600),m=Math.floor(s%3600/60),x=s%60;
- el.textContent=(d?d+'d ':'')+p(h)+'h '+p(m)+'m '+p(x)+'s';setTimeout(tick,1000-(Date.now()%1000));}
-tick();})();
-</script><div id="gate" class="hero">
+<body class="locked"><div id="gate" class="hero">
 <div class="kicker kbox">Encrypted · AES-256</div>
 <h1>Protected File</h1>
 <p class="lead">Enter the password to decrypt.</p>
